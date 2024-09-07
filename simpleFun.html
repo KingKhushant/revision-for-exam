@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body style="background-color: black; color: white;" class="container">
+    <h1>SIMPLE FUNCTION !</h1>
+    <ol>
+        <caption>aurgument + return value</caption>
+        <li> na na</li>
+        <li> na return</li>
+        <li> aurgument na</li>
+        <li> aurgument return </li>
+    </ol>
+    <!-- // coding of c language -->
+    
+    
+    <div class="container text-left">
+        <div class="row align-items-center">
+          <h1>//na argu na return</h1>
+          <div class="col border">
+             
+             <code><pre>
+// c language
+
+#include <\/stdio.h>
+void sum();
+int main()
+{
+	sum();
+}
+void sum()
+{
+	int a,b;
+	printf("enter the value of a and b : ");
+	scanf("%d%d",&a,&b);
+	printf("answer : %d",a+=b);
+}
+</pre></code>
+          </div>
+          
+          <div class="col border">
+            <code>
+              <pre>
+                //c++
+#include<\/iostream>
+using namespace std;
+void nn(){
+	printf("no argue no return");
+}
+int main()
+{
+	nn();
+}
+              </pre>
+            </code>
+            
+          </div>
+          <div class="col border">
+            <code>
+            <pre>
+              //java
+
+              
+            package com.mycompany.nana;
+
+            public class Nana {
+                static void nanaMethod(){
+                    System.out.println("one!");
+                }
+                public static void main(String[] args) {
+                    nanaMethod();
+                }
+            }
+
+              </pre>
+            </code>
+          </div>
+        </div>
+        
+      </div>
+    
+      <h1>no argue with return</h1>
+      <div class="container text-left">
+        <div class="row align-items-center">
+          
+          <div class="col border">
+          <code><pre>
+            //c langugae
+            
+            #include<stdio.h>
+            int nn();
+            int main()
+            {
+              printf("answer  is : %d",nn());
+            }
+            int nn(){
+              int a,b;
+              printf("enter no of a and b : ");
+              scanf("%d%d",&a,&b);
+              a+=b;
+              return a;
+            }
+
+          </pre></code>
+          </div>
+          <div class="col border">
+            <code>
+            <pre>
+             // c++ language
+             
+             #include<iostream>
+             using namespace std;
+             int nn(){
+               int a,b;
+               cout<<"enter no of a and b : ";
+               cin>>a>>b;
+               a+=b;
+               return a;
+             }
+             int main()
+             {
+               printf("answer  is : %d",nn());
+             }
+            </pre>
+            </code>
+          </div>
+          <div class="col border">
+            <code><pre>
+              //java
+              //no argu with return in java
+              package com.mycompany.nana;
+              import java.util.Scanner;
+              public class Nana {
+                  static int nanaMethod(){
+                      Scanner sc = new Scanner(System.in);
+                      System.out.println("enter the value of a and b : ");
+                      int a = sc.nextInt();
+                      int b = sc.nextInt();
+                      a+=b;
+                      return a;
+                  }
+                  public static void main(String[] args) {
+                      System.out.println("answer is : " + nanaMethod());
+                  }
+              }
+              
+              </pre> </code>
+            
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <h1>with argue no return</h1>
+      <div class="container text-left"></div>
+        <div class="row align-items-center">
+          
+          <div class="col border">
+          <code><pre>
+            //c langugae
+
+            //c with argu no return
+#include<stdio.h>
+int nn(int x,int y);
+int main()
+{
+	int a,b;
+	printf("enter no of a and b : ");
+	scanf("%d%d",&a,&b);
+	nn(a,b);
+}
+int nn(int x, int y){
+	x+=y;
+	printf("answer  is of c program : %d",x);	
+}
+          </pre></code>
+          </div>
+          <div class="col border">
+            <code>
+            <pre>
+                      //c++ with argu no return
+
+#include<iostream>
+using namespace std;
+int nn(int x, int y){
+	x+=y;
+	cout<<"answer  is : "<<x;
+}
+int main()
+{
+	int a,b;
+	cout<<"enter no of a and b : ";
+	cin>>a>>b;
+	nn(a,b);
+}
+            </pre>
+            </code>
+          </div>
+          <div class="col border">
+            <code><pre>
+              //java
+
+              package com.mycompany.withargu.java;
+import java.util.Scanner;
+public class WitharguJava {
+    public static void myFun(int x,int y){
+        x+=y;
+        System.out.println(" asnwer : "+x);
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b : ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        myFun(a,b);        
+    }
+}
+
+
+              </pre> </code>
+            
+          </div>
+        </div>
+      </div>
+
+      <h1>with argue with return</h1>
+      <div class="container text-left">
+        <div class="row align-items-center">
+          
+          <div class="col border">
+          <code><pre>
+            //c langugae
+
+            #include<stdio.h>
+              int wawr(int x,int y);
+              int main()
+              {
+                int a,b;
+                printf("enter the value of a and b : ");
+                scanf("%d%d",&a,&b);
+                printf("answer : %d",wawr(a,b));
+              }
+              int wawr(int x, int y)
+              {
+                x+=y;
+                return x;
+              }
+          </pre></code>
+          </div>
+          <div class="col border">
+            <code>
+            <pre>
+             // c++ language
+
+             //c++ with argu no return
+#include<iostream>
+using namespace std;
+int nn(int x, int y){
+	x+=y;
+	return x;
+}
+int main()
+{
+	int a,b;
+	cout<<"enter no of a and b : ";
+	cin>>a>>b;
+	cout<<"answer is : "<<nn(a,b);
+}
+            <></pre>
+            </code>
+          </div>
+          <div class="col border">
+            <code><pre>
+              //java
+              package com.mycompany.withargu.java;
+              import java.util.Scanner;
+              public class WitharguJava {
+                  public static void myFun(int x,int y){
+                      x+=y;
+                      System.out.println(" asnwer : "+x);
+                  }
+                  
+                  public static void main(String[] args) {
+                      Scanner sc = new Scanner(System.in);
+                      System.out.println("enter the value of a and b : ");
+                      int a = sc.nextInt();
+                      int b = sc.nextInt();
+                      myFun(a,b);        
+                  }
+              }
+              
+              </pre> </code>
+            
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
