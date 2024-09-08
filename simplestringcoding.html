@@ -7,20 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body style="background-color: black; color: white;" class="container">
-    <h1>SIMPLE FUNCTION !</h1>
-    <ol>
-        <caption>aurgument + return value</caption>
-        <li> na na</li>
-        <li> na return</li>
-        <li> aurgument na</li>
-        <li> aurgument return </li>
-    </ol>
+    <h1>STRING !</h1>
+    <ul> 
+        <li>to use string function we use string.h header file</li>
+        <li>and with variable we use .length()  </li>
+        <li>To get the length of a string, use the length() function:</li>
+        <li><code>string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+          cout << "The length of the txt string is: " << txt.length();</code></li>
+          <li>and in java we use <br>  //java <br> <code> String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            System.out.println(txt.length());</code></li>
+    </ul>
     <!-- // coding of c language -->
     
     
     <div class="container text-left">
         <div class="row align-items-center">
-          <h1>//na argu na return</h1>
+          <h1>string length without using length function </h1>
           <div class="col border">
             //c langugae <br>
              //string length without using length function 
@@ -36,17 +38,29 @@
                   printf("your string length is  : %d",i);
                 }
 </pre></code>
-          <!-- </div>
-          
+           </div>
+          <h1>string length using while loop</h1>
           <div class="col border">
             <code>
               <pre>
-                //c++ upcomming
+                //c langugae
+                #include<stdio.h>
+                  int main()
+                  {
+                    int i=0;
+                    char str[50];
+                    printf("enter the string : ");
+                    gets(str);
+                  
+                    while(str[++i]!='\0');
+                  
+                    printf("your string length is  : %d",i);
+                  }
               </pre>
             </code>
             
           </div>
-          <div class="col border">
+          <!--<div class="col border">
             <code>
             <pre>
               //java
